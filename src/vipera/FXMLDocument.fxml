@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="237.0" prefWidth="299.0" style="-fx-background-color: #00000000;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vipera.FXMLDocumentController">
+   <children>
+      <AnchorPane layoutY="170.0" prefHeight="68.0" prefWidth="299.0" style="-fx-background-color: #404b69;">
+         <children>
+            <Label fx:id="src" alignment="TOP_LEFT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="36.0" prefWidth="289.0" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+            <Label fx:id="info" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" prefHeight="17.0" prefWidth="159.0" textAlignment="CENTER" textFill="WHITE" underline="true" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="145.0" prefWidth="299.0" style="-fx-background-color: #f73859;">
+         <children>
+            <ImageView fx:id="zipBtn" fitHeight="85.0" fitWidth="74.0" layoutX="33.0" layoutY="36.0" onMouseClicked="#zip" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="36.0">
+               <image>
+                  <Image url="@images/zip.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="closeBtn" fitHeight="43.0" fitWidth="43.0" layoutX="235.0" layoutY="22.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="35.0">
+               <image>
+                  <Image url="@images/close.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
